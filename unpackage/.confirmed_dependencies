@@ -1,0 +1,49 @@
+{
+  "index.html": {
+    "refer": [
+      "page/inpatient/index.html",
+      "page/user/index.html",
+      "page/hospital/index.html",
+      "page/clinic/index.html"
+    ],
+    "resources": [
+      "page/inpatient/index.html",
+      "page/clinic/index.html"
+    ]
+  },
+  "page/inpatient/index.html": {
+    "refer": [
+      "index.html",
+      "page/hospital/index.html",
+      "page/user/index.html"
+    ],
+    "resources": [
+      "index.html"
+    ]
+  },
+  "page/hospital/index.html": {
+    "refer": [
+      "page/user/index.html",
+      "index.html",
+      "page/inpatient/index.html"
+    ],
+    "resources": [
+      "index.html"
+    ]
+  },
+  "page/user/index.html": {
+    "refer": [
+      "index.html",
+      "page/inpatient/index.html",
+      "page/hospital/index.html"
+    ],
+    "resources": [
+      "index.html"
+    ]
+  },
+  "page/clinic/index.html": {
+    "refer": [
+      "index.html"
+    ]
+  }
+}

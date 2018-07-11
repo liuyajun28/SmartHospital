@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+        <title></title>
+        <link rel="stylesheet" href="../../css/mui.min.css" />
+        <link rel="stylesheet" href="../../css/app.css" />
+<!--        mui.min.css和app.css是Hbuilder提供的两个css文件，每个html文件中都需要包含进来
+-->        <style>
+            html,
+            body {
+                background-color: #efeff4;
+            }
+            .mui-content{
+            	top: '44px';
+            	bottom: '50px';
+            }
+        </style>
+    </head>
+
+    <body>			
+    	<div class="mui-content">
+    		        	<!-- 图片轮播 -->
+			<div class="mui-slider" style="height: 150px;">
+				<div class="mui-slider-group mui-slider-loop">
+					 <!--支持循环，需要重复图片节点-->
+					<div class="mui-slider-item  mui-slider-item-duplicate">
+						<a href="#"><img src="../../image/3.png" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="../../image/1.png" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="../../image/2.png" /></a>
+					</div>
+					<div class="mui-slider-item">
+						<a href="#"><img src="../../image/3.png" /></a>
+					</div>
+					<div class="mui-slider-item  mui-slider-item-duplicate">
+						<a href="#"><img src="../../image/1.png" /></a>
+					</div>
+				</div>
+			</div>
+    		<!-- 首页导航--宫格型 -->
+        	<ul class="mui-table-view mui-grid-view mui-grid-9">
+        		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+        			<span class="mui-icon mui-icon-info"></span>
+                    <div class="mui-media-body">医院介绍</div>                           
+        		</li>                                    
+        		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+        			<span class="mui-icon mui-icon-paperplane"></span>
+                    <div class="mui-media-body">科室分布</div>
+        		</li>                                    
+        		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+        			<span class="mui-icon mui-icon mui-icon-map"></span>
+                    <div class="mui-media-body">来院导航</div>                             
+        		</li>                                    
+        		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+        			<span class="mui-icon mui-icon-paperclip"></span>
+                    <div class="mui-media-body">门诊排班</div>                           
+        		</li>
+        		<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+        			<span class="mui-icon mui-icon-help"></span>
+                    <div class="mui-media-body">使用指南</div>                           
+        		</li>  
+        	</ul>
+    	</div>
+			
+        <script src="../../js/mui.min.js"></script>
+        	<script>
+		mui.init({
+			swipeBack:true //启用右滑关闭功能
+		});
+	</script>
+    </body>
+</html>
