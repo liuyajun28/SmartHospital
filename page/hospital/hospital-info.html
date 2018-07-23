@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../../css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			#mui-content{
+				background: #F9F9F9;
+			}
+			p{ 
+				text-indent:2em;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">医院信息</h1>
+		</header>
+		<div class="mui-content">
+			<div id="image">
+				<img src="../../image/1.png"/ style="max-width:100%;overflow:hidden;">
+				<ul class="mui-table-view">
+				    <li class="mui-table-view-cell">安徽省妇幼保健院</li>
+				    <li class="mui-table-view-cell">三级甲等</li>
+				    <li class="mui-table-view-cell">0551-62318199<button type="button" class="mui-btn" onclick="toDial()">拨打电话</button></li>
+				    <li class="mui-table-view-cell">安徽省合肥市庐阳区益民街15号<button type="button" class="mui-btn" onclick="toNav()">查看导航</button></li>
+				    <li class="mui-table-view-cell">
+					<p>安徽省妇幼保健院始建于1951年，经过几代人的不懈努力，已经发展成为集医疗、教学、科研、保健为一体的三级甲等妇幼保健院，担负着合肥地区妇科疾病诊治、高危妊娠处理、助产分娩、辅助生育、计划生育手术、妇幼保健、新生儿疾病治疗、乳腺病诊治等医疗保健的重要任务。医院以精益求精的技术和全面优质的服务，获得广大人民群众的支持和信赖。2014年全院门急诊量110万人次，入院病人3.6万人次，手术例数2.1万人次，分娩婴儿数2.2万。</p>
+					<p>医院拥有辉煌的历史。1994年通过国家级评估，成为全省首家规模最大的国家级“爱婴医院”；2004年7月正式挂牌为安徽医科大学妇幼保健临床学院；2010年1月通过评审成为全省首家“三级甲等妇幼保健院”；2012年7月，经省卫生厅批准挂牌“安徽省妇幼保健院”；2014年通过国家卫计委评审荣获“全国百姓放心示范医院”称号；2015年通过国家卫计委评审荣获“全国妇幼保健机构中医药示范单位”称号。医院还曾被上级授予：全国三八红旗单位、全国计划生育先进单位、全国卫生系统先进集体、安徽省文明单位、全国妇幼保健机构中医药工作示范单位、第一批开展高通量基因测序产前筛查与诊断临床应用试点工作机构等荣誉称号。2014年由医院牵头成立由80多家单位参加的安徽省妇幼保健医疗联合体。2015年我院成为安徽省产科专业医疗质量控制中心依托单位。
+					</p><p>医院不断加强人才培养和引进力度，拥有一支技术精湛、医德高尚的医生队伍。其中博士生15人、硕士研究生100多人，副高级以上职称专家80人，中级职称技术人员400余人。
+					</p><p>医院重视学科建设，科研工作硕果累累。辅助生殖中心和产前诊断中心经卫生部核准成立；中医科是国家级重点学科；产科是安徽省“十二五”医学重点培育专科；不孕不育症列入“十二五”省级中医重点专科专病建设；新生儿科、医学超声科、检验科、妇科、生殖科、小儿外科是合肥市医学重点专科。作为安徽医科大学妇幼保健临床学院，医院拥有安徽医科大学社会医学与卫生事业管理学、妇产科学、临床检验诊断学、儿科学等四个学科硕士培养点。
+					</p><p>医院始终坚守“团结、开拓、敬业、奉献”的院训，实行精细化、专业化、数字化管理，以“大专科强综合，以综合促专科”为特点，努力打造成为省内一流、华东先进、全国知名的现代化医院。</p>
+					</li>
+				</ul>
+			</div>
+			<div>
+				<center style="color: #242424;font-size: 14px;">安徽省妇幼保健院</center>
+				<center style="color: #6D6D72;font-size: 12px;">0551-62318199</center>
+			</div>
+		</div>
+
+		<script src="../../js/mui.min.js"></script>
+		<script type="text/javascript">
+			mui.init();
+			mui.plusReady(function(){
+				
+			});
+			//跳转至来院导航页面
+			function toNav(){
+				mui.openWindow('hospital-nav.html','hospital-nav.html','');
+			}
+			//拨打电话
+			function toDial() {
+				plus.device.dial( "1008611", false );
+			}
+		</script>
+	</body>
+
+</html>

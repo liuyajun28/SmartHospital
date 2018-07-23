@@ -7,35 +7,57 @@
         <title></title>
         <link rel="stylesheet" href="../../css/mui.min.css" />
         <link rel="stylesheet" href="../../css/app.css" />
+        <style type="text/css">
+        	.myicon{
+        		color:#00BFFF;
+        		text-align: center;
+        		line-height: 20px;
+        		margin: 0px 10px 0px 10px;
+        	}
+        </style>
     </head>
 
     <body>
         <div class="mui-content">
-			 <ul class="mui-table-view"> 
+        	<div id="00">
+        		<ul class="mui-table-view"> 
 			        <li class="mui-table-view-cell">
-						<a class="mui-navigate-right">我的就诊人</a>
+						<a class="mui-navigate-right" href="my-patients.html">
+							<span class="myicon mui-icon mui-icon-person-filled"></span>
+								我的就诊人
+						</a>
+			        </li>
+			 </ul>
+        	</div>
+        	<div >
+        	<div id=""><br /></div>
+        	</div>
+			 <ul class="mui-table-view"> 
+			         <li class="mui-table-view-cell">
+						<a class="mui-navigate-right" href="register-history.html"><span class="myicon mui-icon mui-icon-loop"></span>挂号记录</a>
 			        </li>
 			         <li class="mui-table-view-cell">
-						<a class="mui-navigate-right">挂号记录</a>
+						<a class="mui-navigate-right" href="take-number-history.html"><span class="myicon mui-icon mui-icon-bars"></span>取号记录</a>
 			        </li>
 			         <li class="mui-table-view-cell">
-						<a class="mui-navigate-right">取号记录</a>
+						<a class="mui-navigate-right" href="payment-history.html"><span class="myicon mui-icon mui-icon-pengyouquan"></span>缴费记录</a>
 			        </li>
 			         <li class="mui-table-view-cell">
-						<a class="mui-navigate-right">缴费记录</a>
+						<a class="mui-navigate-right" href="overpay-history.html"><span class="myicon mui-icon mui-icon-micoff"></span>住院押金补缴记录</a>
 			        </li>
-			         <li class="mui-table-view-cell">
-						<a class="mui-navigate-right">住院押金补缴记录</a>
-			        </li>
-			         <li class="mui-table-view-cell">
-						<a class="mui-navigate-right">就诊卡充值记录</a>
+			        <li class="mui-table-view-cell">
+						<a class="mui-navigate-right" href="recharge-history.html"><span class="myicon mui-icon mui-icon-circle-filled"></span>就诊卡充值记录</a>
 			        </li>
 			</ul>
+			</div>
         </div>
         <script src="../../js/mui.min.js"></script>
         	<script>
 		mui.init({
 			swipeBack:true //启用右滑关闭功能
+		});
+		mui(".mui-table-view").on('tap','a',function(){
+			mui.openWindow(this.href,this.href,'');
 		});
 	</script>
     </body>

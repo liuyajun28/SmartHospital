@@ -15,7 +15,11 @@
     "refer": [
       "index.html",
       "page/hospital/index.html",
-      "page/user/index.html"
+      "page/user/index.html",
+      "page/inpatient/inpatient-service.html",
+      "page/inpatient/inpatient-detail.html",
+      "page/inpatient/inpatient-prepayment.html",
+      "page/inpatient/prepayment-history.html"
     ],
     "resources": [
       "index.html"
@@ -25,7 +29,14 @@
     "refer": [
       "page/user/index.html",
       "index.html",
-      "page/inpatient/index.html"
+      "page/inpatient/index.html",
+      "page/hospital/map.html",
+      "page/hospital/map2.html",
+      "page/hospital/use-guide.html",
+      "page/hospital/hospital-info.html",
+      "page/hospital/hospital-nav.html",
+      "page/hospital/dep-location.html",
+      "page/hospital/scheduling.html"
     ],
     "resources": [
       "index.html"
@@ -35,7 +46,11 @@
     "refer": [
       "index.html",
       "page/inpatient/index.html",
-      "page/hospital/index.html"
+      "page/hospital/index.html",
+      "page/user/take-number-history.html",
+      "page/user/overpay-history.html",
+      "page/user/register-history.html",
+      "page/user/my-patients.html"
     ],
     "resources": [
       "index.html"
@@ -43,7 +58,23 @@
   },
   "page/clinic/index.html": {
     "refer": [
-      "index.html"
+      "index.html",
+      "page/clinic/register-today.html",
+      "page/clinic/my-register.html",
+      "page/clinic/intelligent-guidance.html",
+      "page/clinic/medical-card-recharge.html",
+      "page/clinic/outpatient-payment.html",
+      "page/clinic/take-the-number.html",
+      "page/clinic/recharge-history-list.html",
+      "page/clinic/my-payment.html"
+    ],
+    "resources": [
+      "page/clinic/icons8-ýJa-96.png"
+    ]
+  },
+  "page/hospital/hospital-info.html": {
+    "refer": [
+      "page/hospital/hospital-nav.html"
     ]
   }
 }
